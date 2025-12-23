@@ -21,6 +21,7 @@ def frames():
         yield img
 
 loop(frames(), quality=70, max_side=1024)
+loop(frames(), image_format="png", max_side=1024, png_compress_level=3)
 ```
 
 ## Notes
