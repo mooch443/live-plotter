@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "live-plotter"
+version = "0.1.0"
+description = "Live-updating generator viewer for Jupyter notebooks."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Tristan" }]
+dependencies = [
+  "numpy>=1.21",
+  "Pillow>=9.0",
+  "ipywidgets>=7.6",
+  "ipython>=7.0",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "ruff>=0.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-org/live-plotter"
+Repository = "https://github.com/your-org/live-plotter"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
