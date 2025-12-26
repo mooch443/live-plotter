@@ -27,6 +27,10 @@ dev = [
   "pytest>=7.0",
   "ruff>=0.3",
 ]
+video = [
+  "imageio>=2.31",
+  "imageio-ffmpeg>=0.4.9",
+]
 
 [project.urls]
 Homepage = "https://github.com/your-org/live-plotter"
