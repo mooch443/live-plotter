@@ -5,7 +5,7 @@ Live-update a generator of image frames inside a Jupyter notebook cell.
 ## Install
 
 ```bash
-pip install git+https://github.com/your-org/live-plotter.git
+pip install git+https://github.com/mooch443/live-plotter.git
 ```
 
 For video recording support:
